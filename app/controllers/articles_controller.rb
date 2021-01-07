@@ -10,12 +10,15 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.create(article_params)
+    
     if !category_ids.nil? 
       category_ids.each do |category|
         @article.categories << Category.find_by_id(category)
       end
       @article.save
-      redirect_to root_path
+      @article.image = params[:image]
+      
+      redirect_to articles_path
     else
       flash[:error] ="Please select atleast one category."
     end
@@ -26,6 +29,6 @@ class ArticlesController < ApplicationController
     params[:category_ids]
   end
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :image)
   end
 end

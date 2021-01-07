@@ -1,1 +1,10 @@
 <h1>Articles Index page</h1>
+<% @articles.each do |article| %>
+    <tr>
+     <td><%= article.title %></td><br>
+      <img src="<%=article.image%>", height="40%" width="40%">
+      <br>
+      <td><%= article.body %></td>
+     <br>
+    </tr>
+<% end %>

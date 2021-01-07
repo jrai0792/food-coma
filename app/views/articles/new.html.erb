@@ -1,5 +1,5 @@
 <h1>Create Article</h1>
-<%= form_for @article do |f| %>
+<%= form_for @article, :html => {:multipart => true} do |f| %>
 <div class="field">
   <%= f.label :title %><br>
   <%= f.text_field :title , required: true%><br>
@@ -7,6 +7,10 @@
   <div class="field">
   <%= f.label :body %><br>
   <%= f.text_field :body, required: true %><br>
+  </div>
+  <div class="field">
+    <%# <%= f.hidden_field :image_cache %> %>
+    <%= f.file_field :image, required: true %><br>
   </div>
   <div class="field">
    <% for category in Category.all%>
