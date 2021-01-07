@@ -21,6 +21,7 @@ class ArticlesController < ApplicationController
       redirect_to articles_path
     else
       flash[:error] ="Please select atleast one category."
+      render :new
     end
   end
 
