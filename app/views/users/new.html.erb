@@ -1,0 +1,13 @@
+<h1>Signup!</h1>
+
+<%= form_for :user, url:'/users' do |f|%>
+  <div>
+  <%= f.label :name %><br>
+  <%= f.text_field :name, autofocus: true %><br>
+  </div><br>
+  <div>
+  <%= f.label :email %><br>
+  <%= f.email_field :email, autofocus: true %><br>
+  </div><br>
+  <%= f.submit "Signup"%>
+<% end %>

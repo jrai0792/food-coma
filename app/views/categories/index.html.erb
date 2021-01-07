@@ -5,7 +5,9 @@
 <% @categories.each do |category| %>
     <tr>
      <td><%= category.name %></td>
+     <% if !current_user.nil? %>
      <%= link_to 'Delete', category_path(category), :confirm => "Are you sure?", method: :delete%>
+     <%end%>
      <br>
     </tr>
 <% end %>

@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authorize
+
   def new
     @article = Article.new
     @categories = Category.all
