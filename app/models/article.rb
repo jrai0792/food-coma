@@ -5,10 +5,8 @@ class Article < ApplicationRecord
   has_many :votes
   mount_uploader :image, ImageUploader
 
-  def voted?(user)
-    votes.each do |vote|
-      votes.find_by_id(vote.user_id == user.id)
-    end
+  def voted?(user,article)
+    votes.find_by(user_id: user.id, article_id: article.id)
   end
 
   validates :title, presence: true

@@ -10,7 +10,11 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles = Article.all
+    if !current_user.nil?
+      @articles = Article.all
+    else
+      redirect_to '/login'
+    end
   end
 
   def create
