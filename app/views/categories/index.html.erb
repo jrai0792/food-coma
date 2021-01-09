@@ -1,4 +1,4 @@
-<h1>Categories index page</h1>
+<h1 class="test">Categories index page</h1>
 <%= link_to "Create Category", new_category_path %><br>
 <%= link_to "Create Article", new_article_path %><br>
 <h2>All Categories</h2>
@@ -6,7 +6,7 @@
     <tr>
      <td><%= category.name %></td>
      <% if !current_user.nil? %>
-     <%= link_to 'Delete', category_path(category), :confirm => "Are you sure?", method: :delete%>
+     <%= link_to "Delete", category_path(category), :confirm => "Are you sure?", method: :delete%>
      <%end%>
      <br>
     </tr>

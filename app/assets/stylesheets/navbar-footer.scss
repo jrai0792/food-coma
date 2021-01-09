@@ -1,0 +1,57 @@
+ul {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+li {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.social a {
+  display: block;
+  height: 2rem;
+  padding: 0 0.15rem;
+
+  img {
+    border-radius: 15rem;
+  }
+}
+
+.social a:hover {
+  filter: brightness(200%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  border-bottom: #838080 4px solid;
+  width: 100%;
+  background-color: #fff;
+  height: 7.7%;
+  z-index: 2;
+
+  li {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+
+  .app-logo {
+    height: 4%;
+    width: 4%;
+    border-radius: 10px;
+    margin-left: -2%;
+    margin-top: -0.6%;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 6%;
+  width: 100%;
+  background-color: #424040f5;
+  font-size: 1.3rem;
+  z-index: 3;
+}

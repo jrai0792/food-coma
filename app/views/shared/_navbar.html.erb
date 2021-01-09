@@ -1,0 +1,20 @@
+<header class="gray-links">
+  <nav class="flex space-between">
+    <li class="app-logo">
+      <a href="<%=root_path %>"><%= image_tag("app-logo.png", :alt => "logo") %></a>
+     </li>
+      <ul class="flex">
+        <li class="orange-links"><%= link_to 'Home', root_path %></li>
+        <li><%= link_to Category.first.name, category_path(Category.first)%></li>
+        <li><%= link_to Category.second.name, category_path(Category.second) %></li>
+        <li><%= link_to Category.third.name, category_path(Category.third)%></li> 
+        <li><%= link_to Category.fourth.name, category_path(Category.fourth)%></li> 
+      </ul>
+      <% if current_user %>
+      Signed in as <%= current_user.name.capitalize() %> | <%= link_to "Logout", '/logout' %>
+    <% else %>
+      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+    <% end %>
+  </nav>
+   
+</header>
