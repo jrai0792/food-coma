@@ -1,9 +1,19 @@
-<h1>Create Category</h1>
-<%= form_for @category do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :priority %>
-  <%= f.text_field :priority %>
-  <%= f.submit %>
-<% end %>
+<main class="content">
+  <div class="form-container">
+    <h1 class="cate-head">Create Category</h1>
+    <%= form_for @category do |f| %>
+      <div class="">
+        <div class="input-flex flex">
+          <%= f.label :name, required: true, class: "field" %>
+          <%= f.text_field :name, required: true, class: "field" %>
+        </div>
+        <div class="input-flex flex">
+        <%= f.label :priority, required: true, class: "field" %>
+        <%= f.text_field :priority, required: true, class: "field" %>
+        </div>
+      </div>
+      <%= f.submit "Create Category", class: "button" %>
+    <% end %>
+  </div> 
+</main>
 

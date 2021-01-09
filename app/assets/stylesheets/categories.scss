@@ -1,7 +1,90 @@
 // Place all the styles related to the categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-h1 {
-  color: #ff5a00;
-  underline: 1px solid #000000
+main {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0 3em;
+  // height: 100vh;
+  background: linear-gradient(180deg, rgba(77, 66, 60, 0.3) 0%, rgba(77, 66, 60, 0.9) 96%), url(/assets/category.png);
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  width: 50%;
+  height: 40%;
+  box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.32);
+  background-color: transparent;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cate-head {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-flex {
+  justify-content: center;
+  width: 70%;
+  margin: 20px auto;
+  // background-color: aqua;
+}
+
+.input-flex input {
+  
+  width: 70%;
+  text-indent: 30px;
+  border-radius: 20px;
+}
+
+.field {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+// .inputs input,
+// .inputs select {
+//   background-color: green;
+//   width: 100%;
+//   text-indent: 20px;
+//   border-radius: 20px;
+// }
+
+// .inputs span {
+//   font-size: 18px;
+//   color: #767676;
+// }
+
+.button {
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 20px;
+  font-size: 22px;
+}
+
+.anchors p {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+#createbtn {
+  border-radius: 20px;
 }

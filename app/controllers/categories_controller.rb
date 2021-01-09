@@ -17,12 +17,14 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.create(category_params)
     @category.user_id = current_user.id
-    if @category.save
-      flash[:success] = "Created success"
-      redirect_to root_path
+    @category.name = params[:category][:name].capitalize
+    @cat = Category.category_exists(@category.name)
+    if @cat.exists?
+      # flash[:error] = "Category already exists"
+      render :new, notice: 'Category already exists'
     else
-      flash[:notice] = "Something went wrong, please check"
-      render :new
+      @category.save
+      redirect_to root_path
     end
   end
 

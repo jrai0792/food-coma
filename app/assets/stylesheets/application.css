@@ -20,7 +20,6 @@
  }
 
  body {
-  background-color: rgba(25, 64, 194, 0.479);
   margin-top: 10px;
   margin-bottom:10px;
  }
@@ -37,10 +36,8 @@ a {
 }
 
 img {
-  height: 100%;
   object-fit: cover;
   object-position: center;
-  width: 100%;
 }
 
 .flex {
