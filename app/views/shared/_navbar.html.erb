@@ -1,20 +1,28 @@
 <header class="gray-links">
   <nav class="flex space-between">
-    <li class="app-logo">
-      <a href="<%=root_path %>"><%= image_tag("app-logo.png", :alt => "logo") %></a>
-     </li>
+      <span class="app-logo">
+      <%=link_to "FoodComa", root_path, class: "app-logo" %>
+     </span>
       <ul class="flex">
-        <li class="orange-links"><%= link_to 'Home', root_path %></li>
-        <li><%= link_to Category.first.name, category_path(Category.first)%></li>
-        <li><%= link_to Category.second.name, category_path(Category.second) %></li>
-        <li><%= link_to Category.third.name, category_path(Category.third)%></li> 
-        <li><%= link_to Category.fourth.name, category_path(Category.fourth)%></li> 
+          <div class="flex cat-links">
+            <li class="orange-links"><%= link_to 'Home', root_path %></li>
+            <li><a href="#"><%= link_to Category.first.name, category_path(Category.first)%></a></li>
+            <li><%= link_to Category.second.name, category_path(Category.second) %></li>
+            <li><%= link_to Category.third.name, category_path(Category.third)%></li> 
+            <li><%= link_to Category.fourth.name, category_path(Category.fourth)%></li> 
+            
+          </div>
+          <div class="nav-links">
+          <li>
+            <% if current_user %>
+              Signed in as <%= current_user.name.capitalize() %>  |  <%= link_to "Logout", '/logout' %>
+            <% else %>
+                <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+            <% end %>
+          </div>
+        </li>
       </ul>
-      <% if current_user %>
-      Signed in as <%= current_user.name.capitalize() %> | <%= link_to "Logout", '/logout' %>
-    <% else %>
-      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-    <% end %>
+      
   </nav>
    
 </header>

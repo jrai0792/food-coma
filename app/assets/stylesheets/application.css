@@ -20,7 +20,7 @@
  }
 
  body {
-  background-color: rgba(223, 103, 99, 0.479);
+  background-color: rgba(25, 64, 194, 0.479);
   margin-top: 10px;
   margin-bottom:10px;
  }
@@ -29,6 +29,11 @@
   line-height: 1.5rem;
   list-style-type: none;
   text-align: center;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -73,6 +78,3 @@ img {
 .dark-orange-links a:hover {
   filter: brightness(200%);
 }
-
-
-

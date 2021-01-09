@@ -1,28 +1,22 @@
 <footer class="dark-orange-links white-text">
-  <ul class="flex space-between">
-    <ul class="flex">
-      <li>
-        <a href="#">Privacy Policy</a>
-      </li>
-      <li>
-        <a href="#">Terms & Conditions</a>
-      </li>
-      <li>
-        Copyright 2020. All rights reserved.
-      </li>
-    </ul>
-    <li>
-      <div class="social flex">
-        <a href="#" class="icon">
-          <%= image_tag("twitter.svg", :alt => "twitter logo")%>
-        </a>
-        <a href="#" class="icon">
-          <%= image_tag("instagram.svg", :alt => "instagram logo") %>
-        </a>
-        <a href="#" class="icon">
-          <%= image_tag("facebook.svg", :alt => "facebook logo") %>
-        </a>
+  <div class="footer-div">
+    <span class="footer-logo">FoodComa</span>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <span class="text-white">Copyright 2020. All rights reserved.</span>
+    </div>
+    <div class="social-media">
+      <span class="text-white">Connect with us: </span>
+      <div class="social-media-icon">
+        <%= image_tag("twitter.svg", :alt => "twitter logo")%>
       </div>
-    </li>
-  </ul>
+      <div class="social-media-icon">
+        <%= image_tag("instagram.svg", :alt => "instagram logo") %>
+      </div>
+      <div class="social-media-icon">
+        <%= image_tag("facebook.svg", :alt => "facebook logo") %>
+      </div>
+    </div>
+  </div>
 </footer>
