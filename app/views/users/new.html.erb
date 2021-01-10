@@ -1,13 +1,18 @@
-<h1>Signup!</h1>
-
-<%= form_for :user, url:'/users' do |f|%>
-  <div>
-  <%= f.label :name %><br>
-  <%= f.text_field :name, autofocus: true %><br>
-  </div><br>
-  <div>
-  <%= f.label :email %><br>
-  <%= f.email_field :email, autofocus: true %><br>
-  </div><br>
-  <%= f.submit "Signup"%>
-<% end %>
+<main class="signup-container">
+  <div class="form-container">
+      <div class="signup-heading">
+      <h1>Signup!</h1>
+      </div>
+      <%= form_for :user, url:'/users' do |f|%>
+        <div class="field flex">
+        <%= f.label :name, required: true, class: "signup-field"%><br>
+        <%= f.text_field :name, autofocus: true, required: true, class: "signup-field" %><br>
+        </div><br>
+        <div class="field flex">
+        <%= f.label :email, required: true, class: "signup-field" %><br>
+        <%= f.email_field :email, autofocus: true, required: true, class: "signup-field" %><br>
+        </div><br>
+        <%= f.submit "Signup", class: "button"%>
+      <% end %>
+  </div>
+</main>
