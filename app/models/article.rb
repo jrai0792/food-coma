@@ -9,6 +9,8 @@ class Article < ApplicationRecord
     votes.find_by(user_id: user.id, article_id: article.id)
   end
 
+  scope :get_most_votes, -> { joins(:votes).group('articles.id').order('count(votes.id) desc').first }
+
   validates :title, presence: true
   validates :body, presence: true
   validates :categories, presence: true

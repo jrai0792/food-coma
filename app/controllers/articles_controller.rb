@@ -50,8 +50,8 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 
-  # def vote_count
-  #   @vote_count = Vote.where(:article_id => @article.id).count
+  # def most_voted
+  #   @most_voted = Vote.group(:article_id).count
   # end
 
   private
