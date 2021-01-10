@@ -23,7 +23,6 @@ li {
 
 .footer-links a {
   padding: 3px;
-  color: $color1;
 }
 
 .cat-links li a {
@@ -101,7 +100,7 @@ footer {
   align-items: center;
 }
 
-&:hover {
+:hover {
   text-decoration: none;
 }
 
