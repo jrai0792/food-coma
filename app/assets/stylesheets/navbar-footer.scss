@@ -21,6 +21,16 @@ li {
   }
 }
 
+.footer-links a {
+  padding: 3px;
+  color: $color1;
+}
+
+.cat-links li a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .social a:hover {
   filter: brightness(200%);
 }
@@ -43,6 +53,7 @@ nav {
     font-weight: 900;
     padding-left: 20px;
   }
+
   .nav-links li {
     font-size: 14px;
     text-decoration: none;
@@ -51,11 +62,6 @@ nav {
   .cat-links {
     position: relative;
     right: 200px;
-  }
-
-  .cat-links li a {
-    font-size: 18px;
-    font-weight: 700;
   }
 }
 
@@ -95,13 +101,8 @@ footer {
   align-items: center;
 }
 
-.footer-links a {
-  padding: 3px;
-  color: $color1;
-
-  &:hover {
-    text-decoration: none;
-  }
+&:hover {
+  text-decoration: none;
 }
 
 .social-media {
@@ -127,6 +128,3 @@ footer {
     }
   }
 }
-
-
-

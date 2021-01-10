@@ -16,17 +16,17 @@
  *= require bootstrap/scss/bootstrap
  */
 
- * {
-   margin: 0;
-   font-family: 'Lato', sans-serif;
- }
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
 
- body {
+body {
   margin-top: 10px;
-  margin-bottom:10px;
- }
+  margin-bottom: 10px;
+}
 
- li {
+li {
   line-height: 1.5rem;
   list-style-type: none;
   text-align: center;

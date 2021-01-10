@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 main {
   height: 100vh;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
+
 .content {
   justify-content: space-around;
   align-items: center;
   padding: 2em 0 3em;
-  background: linear-gradient(180deg, rgba(214, 204, 199, 0.966) 0%,rgba(148, 121, 107, 0.9)), url(/assets/category.jpg);
+  background: linear-gradient(180deg, rgba(214, 204, 199, 0.966) 0%, rgba(148, 121, 107, 0.9)), url(/assets/category.jpg);
   background-repeat: no-repeat;
 }
 
@@ -48,6 +49,7 @@ form {
   text-align: center;
   margin-top: 30px;
 }
+
 input {
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -60,7 +62,6 @@ input {
 }
 
 .input-flex input {
-  
   width: 70%;
   text-indent: 30px;
   border-radius: 20px;
@@ -85,8 +86,6 @@ input {
   font-size: 18px;
 }
 
-
 #createbtn {
   border-radius: 20px;
 }
-
