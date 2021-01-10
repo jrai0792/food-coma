@@ -1,11 +1,25 @@
-<h1>Article Show page</h1>
-<h3><%= @article.title %></h3>
-<p><%= @article.body %></p>
-<img src="<%=@article.image%>", height="40%" width="40%">
-<p>Author : <%= @author.name.capitalize() %></p>
-<% if @article.voted?(current_user,@article)%>
-  <%= button_to "Vote", vote_path(@article), method: "put", disabled: true %>
-<% else %>
-  <%= button_to "Vote", vote_path(@article), method: "put" %>
-<% end %>
+<main class="">
+  <section class="article-section">
+    <div class="img-div">
+      <img src="<%=@article.image%>", height="40%" width="40%">
+    </div>
+    <div class="mt-5 article-flex">
+      <h3 class="article-title"><%=@article.title%></h3>
+      <p class="article-body"><%=@article.body%></p>
+      <div class="user flex px-5">
+          <span>By <%=@author.name.capitalize()%></span>
+          <div class="votes flex">
+          <span><%= @vote_count %></span>
+          <% if @article.voted?(current_user,@article)%>
+            <%= button_to "Vote", vote_path(@article), method: "put", disabled: true %>
+          <% else %>
+            <%= button_to "Vote", vote_path(@article), method: "put" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
 

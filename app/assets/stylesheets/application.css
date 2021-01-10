@@ -35,10 +35,10 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .flex {
   display: flex;

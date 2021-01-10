@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
       @article.save
       @article.image = params[:image]
       
-      redirect_to articles_path
+      redirect_to root_path
     else
       flash[:error] ="Please select atleast one category."
       render :new
@@ -37,6 +37,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @author = User.where(:id => @article.user_id).first
+    @vote_count = Vote.where(:article_id => @article.id).count
   end
 
   def vote
@@ -44,6 +45,10 @@ class ArticlesController < ApplicationController
     Vote.create(user_id: current_user.id, article_id:@article.id)
     redirect_to article_path(@article)
   end
+
+  # def vote_count
+  #   @vote_count = Vote.where(:article_id => @article.id).count
+  # end
 
   private
   def category_ids

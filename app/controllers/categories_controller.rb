@@ -30,6 +30,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    # @articles = Article.find_by_id(params[:])
   end
 
   def destroy
