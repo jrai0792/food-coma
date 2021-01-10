@@ -29,7 +29,11 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    if !current_user.nil?
     @category = Category.find(params[:id])
+    else
+      redirect_to '/login'
+    end
     # @articles = Article.find_by_id(params[:])
   end
 

@@ -1,4 +1,3 @@
-<h1 class="test">Categories index page</h1>
 <h2>All Categories</h2>
 <% @categories.each do |category| %>
     <tr>
@@ -10,3 +9,14 @@
     </tr>
 <% end %>
 <%= link_to "All Articles", articles_path %>
+
+<div class="dropdown show">
+    <a class="dropdown-toggle link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        CATEGORIES
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <%Category.all.each do |category|%>
+            <%=link_to category.name, category_path(category), class: "dropdown-item"%>
+        <%end%>
+    </div>
+</div>

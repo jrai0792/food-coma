@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 main {
   height: 100vh;
-  // overflow-y: hidden;
+  overflow-y:scroll;
 }
 .content {
   display: flex;
@@ -58,19 +58,6 @@ input {
   font-size: 18px;
 }
 
-// .inputs input,
-// .inputs select {
-//   background-color: green;
-//   width: 100%;
-//   text-indent: 20px;
-//   border-radius: 20px;
-// }
-
-// .inputs span {
-//   font-size: 18px;
-//   color: #767676;
-// }
-
 .button {
   width: 70%;
   margin: 20px auto;
@@ -88,3 +75,4 @@ input {
 #createbtn {
   border-radius: 20px;
 }
+

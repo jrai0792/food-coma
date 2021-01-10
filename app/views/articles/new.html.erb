@@ -3,19 +3,19 @@
     <h1 class="cate-head">Create Article</h1>
     <%= form_for @article, :html => {:multipart => true, class: "article-form"} do |f| %>
     <div class="article-input-flex">
-        <%= f.label :title, required: true, class: "post-input"  %><br>
-        <%= f.text_field :title , required: true, class: "post-input"%><br>
+        <%= f.label :title, required: true, class: "article-input"  %><br>
+        <%= f.text_field :title , required: true, class: "article-input"%><br>
       </div>
       <div class="article-input-flex">
-        <%= f.label :body, required: true, class: "post-input"  %><br>
-        <%= f.text_area :body, :rows => 10, required: true, class: "post-input body-field" %><br>
+        <%= f.label :body, required: true, class: "article-input"  %><br>
+        <%= f.text_area :body, :rows => 5, required: true, class: "article-input" %><br>
       </div>
-      <div class="article-input-flex">
+      <div class="article-input-flex d-flex mb-4 mt-4">
         <%= f.hidden_field :image_cache %>
-        <%= f.label :image, required: true, class: "post-input"  %><br>
-        <%= f.file_field :image, required: true, class: "post-input" %><br>
+        <%= f.label :image, required: true, class: "article-input"  %><br>
+        <%= f.file_field :image, required: true, class: "article-input" %><br>
       </div>
-      <div class="article-input-flex">
+      <div class="article-input-flex d-flex">
         <p>Select Categories:</p>
         <% for category in Category.all%>
           <div class="category">

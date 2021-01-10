@@ -35,9 +35,13 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    if !current_user.nil?
     @article = Article.find(params[:id])
     @author = User.where(:id => @article.user_id).first
     @vote_count = Vote.where(:article_id => @article.id).count
+    else
+      redirect_to '/login'
+    end
   end
 
   def vote

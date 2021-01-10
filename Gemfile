@@ -63,3 +63,4 @@ gem 'rubocop', '~>0.81.0'
 
 gem 'hirb'
 gem 'carrierwave', '~> 2.0'
+gem "font-awesome-rails"

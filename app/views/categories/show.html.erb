@@ -1,2 +1,16 @@
-<h1>Category <%= @category.name %></h1>
-
+<section class="category-articles">
+  <%i=1%>
+    <%@category.articles.each do |article|%>
+      <div class="item">
+        <div class="img-div">
+          <img src="<%=article.image%>" class=<%="order-2" if i%4==3 || i%4==0%> alt="">
+        </div>
+        <div class="item-content p-2 ml-2 <%="order-1" if i%4==3 || i%4==0%>">
+          <span class="category">Category : <%=@category.name%></span><br>
+          <span class="title"><%=article.title%></span>
+          <p><%=truncate(article.body, length: 100, omission: '...')%> <%=link_to "Read more", article_path(article)%></p>
+        </div>
+      </div>
+      <%i+=1%>
+    <%end%>
+</section>
