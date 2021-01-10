@@ -1,4 +1,10 @@
 <main class="content">
+  <div class="container">
+    <h2 class="">All Categories</h2>
+      <% @categories.each do |category| %>
+        <%= link_to category.name, category_path(category), class: "cat-list"%> | 
+      <% end %>
+  </div>
   <div class="form-container">
     <h1 class="cate-head">Create Category</h1>
     <%= form_for @category do |f| %>

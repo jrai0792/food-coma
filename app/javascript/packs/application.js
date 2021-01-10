@@ -8,6 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 'require("bootstrap/dist/js/bootstrap")'
+'require jquery'
+'require jquery-ui'
 
 Rails.start()
 Turbolinks.start()

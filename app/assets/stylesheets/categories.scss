@@ -6,13 +6,26 @@ main {
   overflow-y:scroll;
 }
 .content {
-  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 2em 0 3em;
-  // height: 100vh;
-  background: linear-gradient(180deg, rgba(102, 91, 86, 0.3) 0%,rgba(148, 121, 107, 0.9)), url(/assets/category.jpg);
+  background: linear-gradient(180deg, rgba(214, 204, 199, 0.966) 0%,rgba(148, 121, 107, 0.9)), url(/assets/category.jpg);
   background-repeat: no-repeat;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+  left: 25%;
+}
+
+.cat-list {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .form-container {
@@ -21,6 +34,7 @@ main {
   box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.32);
   background-color: transparent;
   padding: 20px;
+  margin: 0 auto;
 }
 
 form {

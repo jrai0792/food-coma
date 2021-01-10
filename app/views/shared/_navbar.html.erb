@@ -6,8 +6,6 @@
       <ul class="flex">
           <div class="flex cat-links">
             <li class="orange-links"><%= link_to 'Home', root_path %></li>
-            <li><a href="#"><%= link_to Category.first.name, category_path(Category.first)%></a></li>
-            <li><%= link_to Category.second.name, category_path(Category.second) %></li>
             <li><%= link_to 'Create Category', new_category_path %></li>
             <li><%= link_to "Create Article", new_article_path %><br></li>
           </div>
