@@ -35,6 +35,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
@@ -53,7 +54,10 @@ group :test do
   # gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+   gem 'faker'
+   gem 'database_cleaner'
+   gem 'rubocop-rspec'
+   gem 'rspec_junit_formatter'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

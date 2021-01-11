@@ -2,7 +2,7 @@
 
 > In this project I have built a food articles web application using ruby on rails.
 
-![screenshot](./screenshot.png)
+![screenshot](./app-screenshot.png)
 
 Additional description about the project and its features.
 
