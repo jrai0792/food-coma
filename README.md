@@ -14,6 +14,9 @@ Additional description about the project and its features.
 - VScode
 
 ## Video Demo
+[live url](https://gentle-dawn-13518.herokuapp.com/)
+
+## Video Demo
 
 [Video Link](https://www.loom.com/share/64fb5589d1fc4685856e1db9d773f630)
 
