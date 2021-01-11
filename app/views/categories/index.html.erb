@@ -1,10 +1,12 @@
 <main class="homepage">
   <section class="most-voted">
-    <%=link_to article_path(@most_voted) do%>
-    <img src="<%=@most_voted.image%>" alt="">
-    <div class="most-voted-content">
-    <h5 class="font-weight-bold text-white bg-dark"><%=@most_voted.title%></h5>
-    </div>
+    <%if Vote.exists?%>
+        <%=link_to article_path(@most_voted) do%>
+        <img src="<%=@most_voted.image%>" alt="">
+        <div class="most-voted-content">
+        <h5 class="font-weight-bold text-white bg-dark"><%=@most_voted.title%></h5>
+        </div>
+        <%end%>
     <%end%>
   </section>
 
