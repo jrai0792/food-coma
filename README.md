@@ -13,9 +13,9 @@ Additional description about the project and its features.
 - Postgresql
 - VScode
 
-## Live Demo
+## Video Demo
 
-[Live Demo Link](https://livedemo.com)
+[Video Link](https://www.loom.com/share/64fb5589d1fc4685856e1db9d773f630)
 
 
 ## Getting Started
