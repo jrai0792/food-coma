@@ -1,6 +1,6 @@
 <section class="category-articles">
   <%i=1%>
-    <%@category.articles.each do |article|%>
+    <%@articles.each do |article|%>
       <div class="item">
         <div class="img-div">
           <img src="<%=article.image%>" class=<%="order-2" if i%4==3 || i%4==0%> alt="">

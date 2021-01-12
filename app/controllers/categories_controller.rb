@@ -20,7 +20,6 @@ class CategoriesController < ApplicationController
     @category.name = params[:category][:name].capitalize
     @cat = Category.category_exists(@category.name)
     if @cat.exists?
-      # flash[:error] = "Category already exists"
       render :new, notice: 'Category already exists'
     else
       @category.save
@@ -31,10 +30,10 @@ class CategoriesController < ApplicationController
   def show
     if !current_user.nil?
       @category = Category.find(params[:id])
+      @articles = @category.articles.order("updated_at DESC")
     else
       redirect_to '/login'
     end
-    # @articles = Article.find_by_id(params[:])
   end
 
   def destroy

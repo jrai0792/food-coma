@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
 
   def index
     if !current_user.nil?
-      @articles = Article.all
+      @articles = Article.all.order("created_at DESC")
     else
       redirect_to '/login'
     end

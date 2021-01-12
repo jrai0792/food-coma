@@ -13,7 +13,7 @@ Additional description about the project and its features.
 - Postgresql
 - VScode
 
-## Video Demo
+## Live Demo
 [live url](https://gentle-dawn-13518.herokuapp.com/)
 
 ## Video Demo
@@ -34,15 +34,21 @@ To get this project set up on your local machine, follow these simple steps:
 2. Navigate to your desired location to download the contents of this repository.
 3. Copy and paste the following code into the Terminal: git clone https://github.com/jrai0792/food-coma
 4. Run cd food-coma.
-5. Run bundle install to get the necesary gems.
+5. Run bundle install and then yarn install to get the necesary gems.
 6. Run rails db:migrate.
 7. Run rails server
+8. Run rspec to run test cases.
 
 ## Author
 
 👤 **Jyoti Rai**
 
 - GitHub: [@jrai0792](https://github.com/githubhandle)
+
+## Acknowledgement
+- Microverse curriculum Rails section
+- Rails guides
+- Design acknowledge to Nelson Sakwa on Behance
 
 ## Show your support
 
