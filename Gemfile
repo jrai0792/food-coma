@@ -68,3 +68,5 @@ gem 'carrierwave', '~> 2.0'
 gem 'font-awesome-rails'
 gem 'hirb'
 gem 'jquery-rails'
+
+gem 'cloudinary'
