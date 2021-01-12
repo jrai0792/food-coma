@@ -49,10 +49,6 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 
-  # def most_voted
-  #   @most_voted = Vote.group(:article_id).count
-  # end
-
   private
 
   def category_ids

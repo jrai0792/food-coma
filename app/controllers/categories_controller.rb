@@ -36,6 +36,10 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def default_image
+    image_tag("default.jpg", alt: "default image")
+  end
+
   def destroy
     @category = Category.find(params[:id])
     @category.destroy
