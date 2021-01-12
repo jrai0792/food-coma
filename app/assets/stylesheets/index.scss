@@ -58,3 +58,17 @@ $color1: #da5401;
     }
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .most-voted {
+    height: 50vh;
+    position: relative;
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+  }
+  
+}

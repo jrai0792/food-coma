@@ -37,11 +37,6 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  object-fit: cover;
-  object-position: center;
-} */
-
 .flex {
   display: flex;
 }

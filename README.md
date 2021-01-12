@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 ## Video Demo
 
-[Video Link](https://www.loom.com/share/64fb5589d1fc4685856e1db9d773f630)
+[Video Link](https://www.loom.com/share/a698822c18f442689d1bfc89b64c066a)
 
 
 ## Getting Started

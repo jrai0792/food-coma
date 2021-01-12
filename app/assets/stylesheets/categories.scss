@@ -31,7 +31,7 @@ main {
 
 .form-container {
   width: 50%;
-  height: 40%;
+  // height: 40%;
   box-shadow: 0 0 9px 8px rgba(0, 0, 0, 0.32);
   background-color: transparent;
   padding: 20px;
@@ -58,7 +58,6 @@ input {
   justify-content: center;
   width: 70%;
   margin: 20px auto;
-  // background-color: aqua;
 }
 
 .input-flex input {
@@ -88,4 +87,40 @@ input {
 
 #createbtn {
   border-radius: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .cat-list {
+    font-size: 10px;
+  }
+
+  .cate-head {
+    font-size: 14px;
+  }
+
+  .field {
+    font-size: 10px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .anchors p {
+    font-size: 10px;
+  }
+
+  .head-cate {
+    font-size: 12px;
+  }
+  
+  .content {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    font-size: 10px;
+  }
+  
 }

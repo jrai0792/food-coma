@@ -120,10 +120,59 @@ footer {
 
 @media screen and (max-width: 1199px) {
   footer {
-    font-size: 13px;
+    font-size: 10px;
 
     .footer-div {
       flex-direction: column;
     }
+
+    .footer-logo {
+      font-size: 13px;
+      padding-left: 20px;
+    }
+
+    .social-media-icon {
+      margin: 5px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: $color1;
+    
+      @include flexing();
+    }
   }
+
+  nav {
+    position: fixed;
+    top: 0;
+    border-bottom: #838080 4px solid;
+    width: 100%;
+    background-color: #fff;
+    height: 6%;
+    z-index: 2;}
+
+    .cat-links,
+    .nav-links {
+      font-size: 13px;
+    }
+
+    nav .app-logo {
+      font-size: 13px;
+    }
+
+    .cat-links li a {
+      font-size: 13px;
+      position: relative;
+      left: 160px;
+      padding: 0;
+      font-size: 10px;
+    }
+
+    nav .nav-links li{
+      font-size: 8px;
+      text-decoration: none;
+      position: relative;
+      top: -10px;
+    }
+    
 }
