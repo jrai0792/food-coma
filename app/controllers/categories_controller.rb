@@ -30,14 +30,14 @@ class CategoriesController < ApplicationController
   def show
     if !current_user.nil?
       @category = Category.find(params[:id])
-      @articles = @category.articles.order("updated_at DESC")
+      @articles = @category.articles.order('updated_at DESC')
     else
       redirect_to '/login'
     end
   end
 
   def default_image
-    image_tag("default.jpg", alt: "default image")
+    image_tag('default.jpg', alt: 'default image')
   end
 
   def destroy
