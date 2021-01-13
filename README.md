@@ -1,24 +1,59 @@
-# README
+# FoodComa
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project I have built a food articles web application using ruby on rails.
 
-Things you may want to cover:
+![screenshot](./app-screenshot.png)
 
-* Ruby version
+Additional description about the project and its features.
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby -v 2.7.2
+- Rails -v 6.0.3.4
+- Postgresql
+- VScode
 
-* Database creation
+## Live Demo
+[live url](https://fathomless-bayou-77286.herokuapp.com/)
 
-* Database initialization
+## Video Demo
 
-* How to run the test suite
+[Video Link](https://www.loom.com/share/a698822c18f442689d1bfc89b64c066a)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Getting Started
 
-* ...
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+To get this project up and running locally, you must already have ruby and necessary gems installed on your computer
+
+To get this project set up on your local machine, follow these simple steps:
+
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal: git clone https://github.com/jrai0792/food-coma
+4. Run cd food-coma.
+5. Run bundle install and then yarn install to get the necesary gems.
+6. Run rails db:migrate.
+7. Run rails server
+8. Run rspec to run test cases.
+
+## Author
+
+👤 **Jyoti Rai**
+
+- GitHub: [@jrai0792](https://github.com/githubhandle)
+
+## Acknowledgement
+- Microverse curriculum Rails section
+- Rails guides
+- Design acknowledge to Nelson Sakwa on Behance
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.

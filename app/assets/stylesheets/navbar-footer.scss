@@ -1,0 +1,177 @@
+ul {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social a {
+  display: block;
+  height: 20px;
+  padding: 5px 5px;
+  padding-bottom: 10px;
+
+  img {
+    border-radius: 0;
+  }
+}
+
+.footer-links a {
+  padding: 3px;
+}
+
+.cat-links li a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.social a:hover {
+  filter: brightness(200%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  border-bottom: #838080 4px solid;
+  width: 100%;
+  background-color: #fff;
+  height: 6%;
+  z-index: 2;
+
+  li {
+    text-transform: uppercase;
+  }
+
+  .app-logo {
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 20px;
+  }
+
+  .nav-links li {
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .cat-links {
+    position: relative;
+    right: 200px;
+  }
+}
+
+$color1: #da5401;
+
+@mixin flexing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  h5 {
+    color: $color1;
+  }
+}
+
+footer {
+  background-color: #4d423c;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logo {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+:hover {
+  text-decoration: none;
+}
+
+.social-media {
+  @include flexing();
+}
+
+.social-media-icon {
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: $color1;
+
+  @include flexing();
+}
+
+@media screen and (max-width: 1199px) {
+  footer {
+    font-size: 10px;
+
+    .footer-div {
+      flex-direction: column;
+    }
+
+    .footer-logo {
+      font-size: 13px;
+      padding-left: 20px;
+    }
+
+    .social-media-icon {
+      margin: 5px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: $color1;
+
+      @include flexing();
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    border-bottom: #838080 4px solid;
+    width: 100%;
+    background-color: #fff;
+    height: 6%;
+    z-index: 2;
+  }
+
+  .cat-links,
+  .nav-links {
+    font-size: 13px;
+  }
+
+  nav .app-logo {
+    font-size: 13px;
+  }
+
+  .cat-links li a {
+    position: relative;
+    left: 160px;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  nav .nav-links li {
+    font-size: 8px;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+  }
+}

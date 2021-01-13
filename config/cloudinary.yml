@@ -1,0 +1,17 @@
+development:
+  cloud_name: "dybsa4tld"
+  api_key: "446782392723482"
+  api_secret: "SmAb4O79gkzbyCw_sihCrYW1POc"
+  enhance_image_tag: true
+  static_file_support: false
+  secure: true
+  cdn_subdomain: true
+
+production:
+  cloud_name: "dybsa4tld"
+  api_key: "446782392723482"
+  api_secret: "SmAb4O79gkzbyCw_sihCrYW1POc"
+  enhance_image_tag: true
+  static_file_support: false
+  secure: true
+  cdn_subdomain: true

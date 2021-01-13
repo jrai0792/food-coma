@@ -1,0 +1,25 @@
+<header class="gray-links">
+  <nav class="flex space-between">
+      <span class="app-logo">
+      <%=link_to "FoodComa", root_path, class: "app-logo" %>
+     </span>
+      <ul class="flex">
+          <div class="flex cat-links">
+            <li class="orange-links"><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Create Category', new_category_path %></li>
+            <li><%= link_to "Create Article", new_article_path %><br></li>
+          </div>
+          <div class="nav-links">
+          <li>
+            <% if current_user %>
+              Signed in as <%= current_user.name.capitalize() %>  |  <%= link_to "Logout", '/logout' %>
+            <% else %>
+                <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+            <% end %>
+          </div>
+        </li>
+      </ul>
+      
+  </nav>
+   
+</header>

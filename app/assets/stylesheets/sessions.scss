@@ -1,0 +1,20 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.signup-field {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-indent: 30px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.login-form-container {
+  width: 50%;
+  height: 40%;
+  box-shadow: 0 0 9px 8px rgba(22, 21, 21, 0.32);
+  background-color: transparent;
+  padding: 20px;
+}

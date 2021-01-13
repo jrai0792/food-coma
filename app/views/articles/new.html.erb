@@ -1,0 +1,31 @@
+<main class="article-content">
+  <div class="article-form-container">
+    <h1 class="cate-head">Create Article</h1>
+    <%= form_for @article, :html => {:multipart => true, class: "article-form"} do |f| %>
+    <div class="article-input-flex">
+        <%= f.label :title, required: true, class: "article-input"  %><br>
+        <%= f.text_field :title , required: true, class: "article-input"%><br>
+      </div>
+      <div class="article-input-flex">
+        <%= f.label :body, required: true, class: "article-input"  %><br>
+        <%= f.text_area :body, :rows => 5, required: true, class: "article-input" %><br>
+      </div>
+      <div class="article-input-flex d-flex mb-4 mt-4">
+        <%= f.hidden_field :image_cache %>
+        <%= f.label :image, required: true, class: "article-input"  %><br>
+        <%= f.file_field :image, required: true, class: "article-input" %><br>
+      </div>
+      <div class="article-input-flex d-flex">
+        <p>Select Categories:</p>
+        <% for category in Category.all%>
+          <div class="category">
+            <%= check_box_tag 'category_ids[]', category.id,
+            @article.category_ids.include?(category.id), :id => dom_id(category)%>
+            <%= label_tag dom_id(category), category.name, :class => "check_box_label" %> <br />
+          </div>
+        <%end%>
+      </div>
+      <%= f.submit "Create Article", class: "button" %>
+    <% end %>
+  </div>
+</main>

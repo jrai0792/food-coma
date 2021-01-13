@@ -1,0 +1,33 @@
+<main class="homepage">
+  <section class="most-voted">
+    <%if Vote.exists?%>
+        <%=link_to article_path(@most_voted) do%>
+        <img src="<%=@most_voted.image%>" alt="">
+        <div class="most-voted-content">
+        <h5 class="font-weight-bold text-white bg-dark"><%=@most_voted.title%></h5>
+        </div>
+        <%end%>
+    <% else %>
+        <%= image_tag("dinner2.jpg", alt: "default image") %>
+    <%end%>
+  </section>
+
+  <section class="categories">
+            <%@categories.each do |category|%>
+            <div class="category">
+                <%if category.articles.exists?%>
+                    <%=link_to category_path(category) do%>
+                        <img src="<%=category.articles.last.image%>" alt="">
+                        <h6 class="text-white p-2 font-weight-bold bg-dark"><%=category.name%></h6>
+                        <p class="font-weight-bold bg-dark"><%=truncate(category.articles.last.title.capitalize, length: 40, omission: '...')%></p>
+                    <%end%>
+                <%else%>
+                    <h6 class="text-white p-2 font-weight-bold bg-dark"><%=category.name%></h6>
+                    <%= image_tag("default.jpg", alt: "default image") %>
+                <%end%>
+            </div>
+            <%end%>
+        </section>
+</main>
+
+

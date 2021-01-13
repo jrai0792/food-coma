@@ -1,0 +1,76 @@
+.article-content {
+  background: linear-gradient(180deg, rgba(165, 138, 123, 0.3) 0%, rgba(138, 129, 125, 0.9) 96%), url(/assets/article.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0 3em;
+  height: 100vh;
+}
+
+.article-form-container {
+  width: 50%;
+  box-shadow: 0 0 9px 8px rgba(26, 25, 25, 0.32);
+  background-color: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.article-input-flex {
+  justify-content: space-between;
+}
+
+.article-input {
+  width: 98%;
+  text-indent: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.article-button {
+  border-radius: 20px;
+  background-color: #eae9e8;
+}
+
+@media screen and (max-width: 1199px) {
+  .article-form-container {
+    width: 60%;
+    font-size: 10px;
+  }
+
+  .article-input {
+    font-size: 10px;
+  }
+
+  .article-input-flex p {
+    font-size: 10px;
+  }
+
+  .check_box_label {
+    font-size: 8px;
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.category {
+  width: 20%;
+}
+
+.categ-title {
+  font-size: 18px;
+}

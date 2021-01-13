@@ -12,4 +12,63 @@
  *
  *= require_tree .
  *= require_self
+
+ *= require bootstrap/scss/bootstrap
  */
+
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  line-height: 1.5rem;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.gray-links a {
+  color: #838080;
+}
+
+.orange-links a {
+  color: #f30;
+}
+
+.dark-orange-links a {
+  color: #ff5a00;
+}
+
+.gray-links a:hover {
+  color: #ff5a00;
+}
+
+.orange-links a:hover {
+  color: #ff5a00;
+}
+
+.dark-orange-links a:hover {
+  filter: brightness(200%);
+}
