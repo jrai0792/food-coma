@@ -1,4 +1,4 @@
-production:
+development:
   cloud_name: "dybsa4tld"
   api_key: "446782392723482"
   api_secret: "SmAb4O79gkzbyCw_sihCrYW1POc"
@@ -7,7 +7,7 @@ production:
   secure: true
   cdn_subdomain: true
 
-development:
+production:
   cloud_name: "dybsa4tld"
   api_key: "446782392723482"
   api_secret: "SmAb4O79gkzbyCw_sihCrYW1POc"
