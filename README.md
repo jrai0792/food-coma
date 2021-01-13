@@ -14,7 +14,7 @@ Additional description about the project and its features.
 - VScode
 
 ## Live Demo
-[live url](https://fathomless-bayou-77286.herokuapp.com/)
+[Live url](https://fathomless-bayou-77286.herokuapp.com/)
 
 ## Video Demo
 
@@ -43,7 +43,7 @@ To get this project set up on your local machine, follow these simple steps:
 
 👤 **Jyoti Rai**
 
-- GitHub: [@jrai0792](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/jrai0792)
 
 ## Acknowledgement
 - Microverse curriculum Rails section
