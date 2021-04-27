@@ -1,6 +1,6 @@
 # FoodComa
 
-> In this project I have built a food articles web application using ruby on rails.
+> In this project I have built a food articles web application using Ruby on Rails.
 
 ![screenshot](./app-screenshot.png)
 
